@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title><%= username %> </title>
 </head>
 <body>
     <h2>Drell's Connect</h2>
+    <p id="handle_display"><span id="handle"><%= username %> </span> is online</p>
     <div id="container">
         <div id="chat-output-area">
             <div id="is-typing-div">
-           
         </div>
             <div id="chats">
                <!-- this is where chats are displayed -->
             </div>
         </div>
-        <input type="text" name="" id="handle-box" placeholder="Handle">
         <input type="text" name="" id="message-box" placeholder="Message">
         <button id="send-btn">Send</button>
+        <button id="leavechat">Leave</button>
     </div>
 
    
